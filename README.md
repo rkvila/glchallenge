@@ -1,0 +1,1 @@
+1. En el endpoint de creación de un usuario, en el contrato de entrada se especifica "contrycode" en vez de countrycode. Se respeta este contrato aunque este escrito mal.

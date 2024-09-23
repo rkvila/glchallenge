@@ -1,0 +1,39 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '2.5.14'
+	id 'io.spring.dependency-management' version '1.1.6'
+}
+
+group = 'com.glchallenge'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(11)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	runtimeOnly 'com.h2database:h2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	compileOnly 'org.projectlombok:lombok:1.18.34'
+	annotationProcessor 'org.projectlombok:lombok:1.18.34'
+	testCompileOnly 'org.projectlombok:lombok:1.18.34'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
+	implementation 'javax.platform:javax.javaxee-api:10.0.0'
+	implementation 'org.hibernate.validator:hibernate-validator:6.2.0.Final'
+	implementation 'javax.validation:validation-api:2.0.1.Final'
+	implementation 'org.glassfish:javax.el:3.0.0'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
