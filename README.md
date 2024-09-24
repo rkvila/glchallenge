@@ -13,6 +13,3 @@ Primero, clona el repositorio del proyecto a tu máquina local:
 
 ```bash
 git clone https://github.com/rkvila/glchallenge.git
-
-Algunas consideraciones
-En el endpoint de creación de un usuario, en el contrato de entrada se especifica "contrycode" en vez de countrycode. Se respeta este contrato aunque este escrito mal.
