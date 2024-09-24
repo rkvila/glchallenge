@@ -1,4 +1,4 @@
-Ejecución del proyecto
+## Ejecución del proyecto
 
 Este es un proyecto Java que utiliza Gradle. A continuación, se presentan las instrucciones para configurar, construir y ejecutar el proyecto.
 
